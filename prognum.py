@@ -1,6 +1,5 @@
 def fibonacci(n):
-    fibli = [1,1] 
-    while i < 100:
-        fibli.append(fibli[i]+fibli[i+1])
-        i += 1
-    return fibli[n-1]
+    if n < 3:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
